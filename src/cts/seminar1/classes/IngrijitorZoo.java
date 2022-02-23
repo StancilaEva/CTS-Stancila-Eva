@@ -1,8 +1,10 @@
-package cts.seminar1;
+package cts.seminar1.classes;
+
+import cts.seminar1.classes.Animal;
 
 public class IngrijitorZoo {
     private String nume;
-    public void hranesteAnimal(Animal animal,String mancare){
+    public void hranesteAnimal(Animal animal, String mancare){
         animal.mananca(mancare);
     }
 

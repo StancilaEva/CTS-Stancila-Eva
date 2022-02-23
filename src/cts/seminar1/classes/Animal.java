@@ -1,4 +1,4 @@
-package cts.seminar1;
+package cts.seminar1.classes;
 
 public abstract class Animal {
     private String nume;

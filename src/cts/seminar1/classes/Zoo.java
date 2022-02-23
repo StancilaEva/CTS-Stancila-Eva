@@ -1,4 +1,7 @@
-package cts.seminar1;
+package cts.seminar1.classes;
+
+import cts.seminar1.classes.Animal;
+import cts.seminar1.classes.IngrijitorZoo;
 
 import java.util.ArrayList;
 import java.util.List;

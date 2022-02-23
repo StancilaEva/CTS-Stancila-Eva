@@ -1,9 +1,9 @@
-package main;
+package cts.seminar1.main;
 
-import cts.seminar1.Girafa;
-import cts.seminar1.IngrijitorZoo;
-import cts.seminar1.Zebra;
-import cts.seminar1.Zoo;
+import cts.seminar1.classes.Girafa;
+import cts.seminar1.classes.IngrijitorZoo;
+import cts.seminar1.classes.Zebra;
+import cts.seminar1.classes.Zoo;
 
 public class Main {
     public static void main(String[] args) {

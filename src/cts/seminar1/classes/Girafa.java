@@ -1,6 +1,8 @@
-package cts.seminar1;
+package cts.seminar1.classes;
 
-public class Girafa extends Animal{
+import cts.seminar1.classes.Animal;
+
+public class Girafa extends Animal {
     public Girafa(String nume) {
         super(nume);
     }
