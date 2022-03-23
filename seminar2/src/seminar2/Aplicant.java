@@ -1,75 +1,53 @@
 package seminar2;
 
+import java.util.Arrays;
+
 public abstract class Aplicant{
-	protected static int pragPunctaj=80;
 	protected String nume;
 	protected String prenume;
 	protected int varsta;
 	protected int punctaj;
-	protected int nr_proiecte;
+	protected int nrProiecte;
 	protected String[] denumireProiect;
 
-	public String getNume() {
-		return nume;
-	}
 	public void setNume(String nume) {
 		this.nume = nume;
 	}
-	public String getPrenume() {
-		return prenume;
-	}
+
 	public void setPrenume(String prenume) {
 		this.prenume = prenume;
 	}
-	public int getVarsta() {
-		return varsta;
-	}
+
 	public void setVarsta(int varsta) {
 		this.varsta = varsta;
 	}
-	public void statut(){
-		System.out.println("Aplicantul "+nume+" "+prenume+(punctaj>=pragPunctaj?"":" nu")+" a fost acceptat");
-		}
-	public int getPunctaj() {
-		return punctaj;
-	}
+
+
 	public void setPunctaj(int punctaj) {
 		this.punctaj = punctaj;
 	}
-	
-	
 
-	
+	@Override
+	public String toString() {
+		final StringBuilder sb = new StringBuilder("");
+		sb.append("Nume='").append(nume).append('\'');
+		sb.append(", Prenume='").append(prenume).append('\'');
+		sb.append(", Varsta=").append(varsta);
+		sb.append(", Punctaj=").append(punctaj);
+		sb.append(", Nr_proiecte=").append(nrProiecte);
+		sb.append(", DenumireProiect=").append(Arrays.toString(denumireProiect));
+		return sb.toString();
+	}
+
 	public Aplicant() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Aplicant(String nume, String prenume, int varsta, int punctaj, int nr_proiecte, String[] denumireProiect) {
-		super();
-		this.nume = nume;
-		this.prenume = prenume;
-		this.varsta = varsta;
-		this.punctaj = punctaj;
-		this.nr_proiecte = nr_proiecte;
-		this.denumireProiect = denumireProiect;
-	}
-	public int getNr_proiecte() {
-		return nr_proiecte;
-	}
-	public void setNr_proiecte(int nr_proiecte) {
-		this.nr_proiecte = nr_proiecte;
-	}
-	public void getFinantarePeZi(int finantare) {
-
-		// TODO Auto-generated method stub
-		System.out.println("Angajatul "+getNume()+" "+getPrenume()+" primeste"+finantare+" Euro/zi in proiect.");
-
-	}
 
 	public void setProiecte(String[] vect, int nr) {
-		this.nr_proiecte = nr;
+		this.nrProiecte = nr;
 		this.denumireProiect = new String[nr];
-		for(int i=0;i<nr_proiecte;i++){
+		for(int i=0;i<nrProiecte;i++){
 			this.denumireProiect[i]=vect[i];
 		}
 	}
